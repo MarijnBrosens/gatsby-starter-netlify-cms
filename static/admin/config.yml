@@ -7,8 +7,28 @@ public_folder: /img
 
 collections:
   - name: presentations
+    label: Presentation
+    folder: presentations
+    slug: "{{slug}}"
+    create: true
     fields:
       - {label: Title, name: title, widget: string, tagname: ""}
+      - label: Theme
+        name: theme
+        widget: select
+        options:
+          - beige
+          - black
+          - blood
+          - league
+          - moon
+          - night
+          - serif
+          - simple
+          - sky
+          - solarized
+          - white
+
       - label: Body
         name: body
         widget: slides
